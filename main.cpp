@@ -416,6 +416,7 @@ void handleSigns(Stack*& head, char elements[], int& mode, unsigned long long& i
     if (((int) c <= 57 && (int) c >= 48) && mode == 1) {
         handleNumbers(head, c);
     }
+    //could be also ASCII code of '
     else if ((int) c == '\'') {
         //if it's not the first usage of ' then we add another stack element
         if (mode != 2) {
